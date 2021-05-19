@@ -78,6 +78,9 @@
 \end{frame}
 
 \begin{frame}{How do I do use it?}
+\texttt{library(sandwich)} \\
+\texttt{library(lmtest)} \\
+\medskip
 \texttt{ts.lm <- lm(log(cnt)\textasciitilde 1+step+trend, data=tss)} \\
 \texttt{coeftest(ts.lm2, df=Inf, vcov. = NeweyWest(ts.lm2, adjust=TRUE))}
 \end{frame}
