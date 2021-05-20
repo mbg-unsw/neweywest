@@ -173,8 +173,4 @@ HAR Inference: Recommendations for Practice
         \bibliographystyle{abbrvnat}
 \end{frame}
 
-%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{ref/cheese.jpg}}
-%\begin{frame}[plain]
-%\end{frame}
-
 \end{document}
