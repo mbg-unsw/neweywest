@@ -11,7 +11,9 @@
 \usepackage[libertine]{newtxmath}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{tikzpagenodes}
 \usepackage{natbib}
+\usepackage{gitinfo2}
 \newcommand{\rinline}[1]{SOMETHING WRONG WITH knitr}
 %% begin.rcode setup, include=FALSE
 % library(knitr)
@@ -23,6 +25,8 @@
 % options(digits = 2)
 % options(width = 75)
 %% end.rcode
+
+\renewcommand{\gitMark}{\color{gray}\texttt{\tiny\gitBranch\,@\,\gitAbbrevHash\,\gitAuthorDate}}
 
 %\definecolor{beamer@mohblue}{rgb}{0,0.15,0.39}
 %\setbeamercolor{normal text}{fg=beamer@mohblue} % bullets blue by default
@@ -49,13 +53,11 @@
 \title{``Method of the month'': The Newey--West estimator and interrupted time series}
 \author{Malcolm Gillies}
 \date{20 May 2021}
-%\usebackgroundtemplate{%
-%\begin{tikzpicture}[remember picture,overlay]
-%    \node[anchor=south west,scale=1,rotate=90] at ([shift={(0cm,0cm)}]current page.south east) {\texttt{\tiny v\RCSRevision\ \RCSRawDate}};
-%    \draw[beamer@mohblue] ([yshift=-1.3cm]current page.north west)
-%             -- ([yshift=-1.3cm,xshift=\paperwidth]current page.north west);
-%\end{tikzpicture}%
-%}
+\usebackgroundtemplate{%
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south west,scale=1,rotate=90] at ([shift={(0cm,0cm)}]current page marginpar area.south east) {\gitMark};
+\end{tikzpicture}%
+}
 \begin{document}
 
 {
