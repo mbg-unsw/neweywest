@@ -14,42 +14,12 @@
 \usepackage{tikzpagenodes}
 \usepackage{natbib}
 \usepackage{gitinfo2}
-\newcommand{\rinline}[1]{SOMETHING WRONG WITH knitr}
-%% begin.rcode setup, include=FALSE
-% library(knitr)
-% opts_knit$set(progress=FALSE, verbose=FALSE)
-% opts_chunk$set(fig.path='figure/latex-', cache.path='cache/latex-',
-%     cache=FALSE, tidy=FALSE, external=FALSE, echo=FALSE, results="asis",
-%     dev='tikz', fig.show='asis',
-%     fig.align='center', dev.args = list(tikz = list(verbose = FALSE)))
-% options(digits = 2)
-% options(width = 75)
-%% end.rcode
 
 \renewcommand{\gitMark}{\color{gray}\texttt{\tiny\gitBranch\,@\,\gitAbbrevHash\,\gitAuthorDate}}
 
-%\definecolor{beamer@mohblue}{rgb}{0,0.15,0.39}
-%\setbeamercolor{normal text}{fg=beamer@mohblue} % bullets blue by default
-%\setbeamercolor{alerted text}{fg=beamer@mohblue!80!gray}
-%\setbeamercolor{palette primary}{fg=beamer@mohblue}
-%\setbeamercolor{palette secondary}{fg=beamer@mohblue}
-%\setbeamercolor{palette tertiary}{bg=beamer@mohblue}
-%\setbeamercolor{titlelike}{fg=beamer@mohblue}
-%\setbeamercolor{frametitle}{fg=beamer@mohblue,bg=}
-%\setbeamercolor{item}{fg=beamer@mohblue} % bullets blue by default
-%\setbeamercolor{itemize/enumerate body}{fg=beamer@mohblue}
-%\setbeamerfont{frametitle}{size*={19}{21}}
-%\setbeamerfont{item}{size*={13.2}{14.3}}
-%\setbeamerfont{itemize item}{size*={13.2}{14.3}}
-%\setbeamerfont{itemize subitem}{size*={13.2}{14.3}}
-%\setbeamerfont{itemize subsubitem}{size*={13.2}{14.3}}
-%\setbeamertemplate{itemize item}{\raisebox{-0.3\height}{\scalebox{2.0}{\textbullet}}}
-%\setbeamertemplate{itemize subitem}{--}
-%\setbeamertemplate{itemize subsubitem}{--}
 \setbeamertemplate{navigation symbols}{} % remove navigation symbols
 \setbeamercolor*{item}{fg=darkred}
 
-%\setbeamertemplate{title page}[default][rounded=false] % needed for Copenhagen
 \title{``Method of the month'': The Newey--West estimator and interrupted time series}
 \author{Malcolm Gillies}
 \date{20 May 2021}
